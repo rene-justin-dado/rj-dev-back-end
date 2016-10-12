@@ -1,0 +1,32 @@
+{
+  "name": "rj-dev-back-end",
+  "version": "0.1.0",
+  "description": "back-end for personal-blog. Store blogs and projects data here.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --debug server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rene-justin-dado/rj-dev-back-end.git"
+  },
+  "keywords": [
+    "back-end",
+    "database",
+    "postgres"
+  ],
+  "author": "Justin",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rene-justin-dado/rj-dev-back-end/issues"
+  },
+  "homepage": "https://github.com/rene-justin-dado/rj-dev-back-end#readme",
+  "devDependencies": {
+    "knex": "^0.12.3",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "sqlite3": "^3.1.6"
+  }
+}
