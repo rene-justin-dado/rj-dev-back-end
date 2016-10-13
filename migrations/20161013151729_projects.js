@@ -4,7 +4,6 @@ exports.up = function(knex, Promise) {
     table.increments('id').primary()
     table.string('name')
     table.string('github_link')
-    table.json('stack')
     table.string('deployment_link')
   })
 }
