@@ -5,7 +5,6 @@ exports.up = function(knex, Promise) {
     table.string('name')
     table.string('github_link')
     table.string('deployment_link')
-    table.string('github_icon')
   })
 }
 
