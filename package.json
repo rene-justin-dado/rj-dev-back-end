@@ -4,7 +4,8 @@
   "description": "back-end for personal-blog. Store blogs and projects data here.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --debug server.js",
+    "start": "node --debug server.js",
+    "nodemon": "nodemon --debug server.js",
     "knex": "knex",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
