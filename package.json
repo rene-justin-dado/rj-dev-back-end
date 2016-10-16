@@ -1,6 +1,9 @@
 {
   "name": "rj-dev-back-end",
   "version": "0.1.0",
+  "engines": {
+    "node": "4.2.6"
+  },
   "description": "back-end for personal-blog. Store blogs and projects data here.",
   "main": "server.js",
   "scripts": {
@@ -41,7 +44,7 @@
     "eslint-plugin-standard": "^2.0.1",
     "express": "^4.14.0",
     "nodemon": "^1.11.0",
-    "sqlite3": "^3.1.6"
+      "sqlite3": "^3.1.6"
   },
   "dependencies": {
     "babel": "^6.5.2",
