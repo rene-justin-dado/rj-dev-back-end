@@ -7,6 +7,7 @@
     "start": "node --debug server.js",
     "nodemon": "nodemon --debug server.js",
     "knex": "knex",
+    "heroku-postbuild": "npm run knex migrate:latest; npm run knex seed:run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -48,6 +49,7 @@
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "knex": "^0.12.3",
+    "pg": "^6.1.0",
     "sqlite3": "^3.1.6"
   }
 }
