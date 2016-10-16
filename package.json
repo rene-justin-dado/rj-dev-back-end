@@ -2,7 +2,8 @@
   "name": "rj-dev-back-end",
   "version": "0.1.0",
   "engines": {
-    "node": "4.2.6"
+    "node": "4.2.6",
+    "npm": "3.10.8"
   },
   "description": "back-end for personal-blog. Store blogs and projects data here.",
   "main": "server.js",
