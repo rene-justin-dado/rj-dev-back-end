@@ -8,7 +8,7 @@
   "description": "back-end for personal-blog. Store blogs and projects data here.",
   "main": "server.js",
   "scripts": {
-    "start": "node --debug server.js",
+    "start": "node server.js",
     "nodemon": "nodemon --debug server.js",
     "knex": "knex",
     "heroku-postbuild": "npm run knex migrate:latest; npm run knex seed:run",
