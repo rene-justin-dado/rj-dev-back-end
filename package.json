@@ -35,6 +35,9 @@
       "es2015"
     ]
   },
+  "engines": {
+    "node": "6.5.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
