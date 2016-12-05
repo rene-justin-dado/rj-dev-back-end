@@ -10,3 +10,9 @@ router.get('/', (req, res) => {
     .then(data => res.send({data: data}))
     .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
 })
+
+router.get('/contentTitles', (req, res) => {
+  db.getAllBlogContentTitles()
+    .then(data => res.send({data: data}))
+    .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
+})
