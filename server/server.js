@@ -1,9 +1,10 @@
 const express = require('express'),
       cors = require('cors')
       app = express(),
-      PORT = process.env.port || 3000,
-      projects = require('./routes/v1/projects'),
-      blogs = require('./routes/v1/blogs')
+      PORT = 3000 || process.env.port,
+      db = require('./postgres'),
+      projects = require('../routes/v1/projects'),
+      blogs = require('../routes/v1/blogs')
 
 app.use(cors())
 
