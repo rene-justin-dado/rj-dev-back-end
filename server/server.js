@@ -1,7 +1,7 @@
 const express = require('express'),
       cors = require('cors')
       app = express(),
-      PORT = 3000 || process.env.port,
+      PORT = process.env.port || 3000,
       db = require('./postgres'),
       projects = require('../routes/v1/projects'),
       blogs = require('../routes/v1/blogs')
