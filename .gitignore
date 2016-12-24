@@ -41,3 +41,7 @@ jspm_packages
 
 # Database
 dev.sqlite3
+
+# Linter
+.eslintrc
+.eslintrc.js
