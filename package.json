@@ -5,7 +5,7 @@
     "node": "6.5.0"
   },
   "description": "back-end for personal-blog. Store blogs and projects data here.",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
     "nodemon": "nodemon --debug server/server.js",
@@ -38,7 +38,7 @@
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
     "babel-preset-es2015": "^6.16.0",
-    "eslint": "^3.7.1",
+    "eslint": "^3.12.2",
     "eslint-config-standard": "^6.2.0",
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-standard": "^2.0.1",
