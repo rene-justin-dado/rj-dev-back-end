@@ -1,10 +1,10 @@
-const express = require('express'),
-      cors = require('cors')
-      app = express(),
-      PORT = process.env.port || 3000,
-      db = require('./postgres'),
-      projects = require('../routes/v1/projects'),
-      blogs = require('../routes/v1/blogs')
+const express = require('express')
+const cors = require('cors')
+const app = express()
+const PORT = process.env.port || 3000
+const db = require('./postgres')
+const projects = require('../routes/v1/projects')
+const blogs = require('../routes/v1/blogs')
 
 app.use(cors())
 
