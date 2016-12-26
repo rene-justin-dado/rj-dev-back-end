@@ -31,6 +31,15 @@ exports.seed = function(knex, Promise) {
             "questions": "What learnings did you take from the chapter?",
             "answers": "That we really need to rethink how we define intelligence to be inclusive of factors beyond intellect and that the world seems to be getting less monochrome, so to speak.<br>There's also a lot to be said about the value of taking time away from task and objective oriented thinking to just focusing on awareness. To knowing all the intimate little details that your brain can process that normally get filtered out when we work just to accomplish a goal."
           }
+        }),
+        knex('blogs').insert({
+          category: 'EDA culture',
+          title: 'C3 - The Process of Meditation',
+          content: {
+            "title": "Here's one about meditation",
+            "questions": "How did the 'process over product' concept affect the way you tackled the site redesign and rebuild?",
+            "answers": "My site looks like a butt at the moment. :/ If I wasn't focusing my attention on the actual process of making the site work, I think I'd get a lot more caught up on random little things; Like the colour doesn't look so great, or that post isn't quite centered. I could have wasted a lot of time that could be spent building the site."
+          }
         })
       ])
     })
