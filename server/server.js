@@ -1,7 +1,8 @@
+const cfg = require('../config')
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const port = process.env.PORT || 3000
+const port = cfg.port
 const projects = require('../routes/v1/projects')
 const blogs = require('../routes/v1/blogs')
 
