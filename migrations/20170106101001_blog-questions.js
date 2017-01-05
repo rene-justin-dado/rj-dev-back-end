@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments('id').primary()
     table.string('question')
     table.integer('blog_id')
+    table.integer('blog_answers_id')
   })
 };
 
