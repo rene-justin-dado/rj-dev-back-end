@@ -6,6 +6,7 @@ exports.seed = function(knex, Promise) {
       return Promise.all([
         // Inserts seed entries
         knex('blogs').insert({
+          id: 99999,
           category: 'EDA culture',
           title: 'C1 - First Reflections',
           content: {
@@ -15,6 +16,7 @@ exports.seed = function(knex, Promise) {
           }
         }),
         knex('blogs').insert({
+          id: 99998,
           category: 'EDA culture',
           title: 'C1 - Time and Habits',
           content: {
@@ -24,6 +26,7 @@ exports.seed = function(knex, Promise) {
           }
         }),
         knex('blogs').insert({
+          id: 99997,
           category: 'EDA culture',
           title: 'C2 - Emotional Intelligence',
           content: {
@@ -33,6 +36,7 @@ exports.seed = function(knex, Promise) {
           }
         }),
         knex('blogs').insert({
+          id: 99996,
           category: 'EDA culture',
           title: 'C3 - The Process of Meditation',
           content: {
