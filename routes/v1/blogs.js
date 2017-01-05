@@ -22,3 +22,9 @@ router.get('/answers', (req, res) => {
     .then(data => res.send({data: data}))
     .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
 })
+
+router.get('/qna', (req, res) => {
+  db.getQnA()
+    .then(data => res.send({data: data}))
+    .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
+})
