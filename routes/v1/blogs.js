@@ -10,3 +10,15 @@ router.get('/', (req, res) => {
     .then(data => res.send({data: data}))
     .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
 })
+
+router.get('/questions', (req, res) => {
+  db.getAllBlogQuestions()
+    .then(data => res.send({data: data}))
+    .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
+})
+
+router.get('/answers', (req, res) => {
+  db.getAllBlogAnswers()
+    .then(data => res.send({data: data}))
+    .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
+})
