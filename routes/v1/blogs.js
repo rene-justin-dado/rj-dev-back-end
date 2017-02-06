@@ -12,7 +12,9 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:category', (req, res) => {
-  db.getBlogsByCategory(req.params)
+  db.getBlogsByCategory(req.params.category)
+    .then(data => res.send({data: data}))
+    .catch(err => console.error(err))
 })
 
 router.get('/questions', (req, res) => {
