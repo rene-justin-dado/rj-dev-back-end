@@ -8,23 +8,27 @@ module.exports = router
 router.get('/', (req, res) => {
   db.getAllBlogs()
     .then(data => res.send({data: data}))
-    .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
+    .catch(err => console.error(err))
+})
+
+router.get('/:category', (req, res) => {
+  db.getBlogsByCategory(req.params)
 })
 
 router.get('/questions', (req, res) => {
   db.getAllBlogQuestions()
     .then(data => res.send({data: data}))
-    .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
+    .catch(err => console.error(err))
 })
 
 router.get('/answers', (req, res) => {
   db.getAllBlogAnswers()
     .then(data => res.send({data: data}))
-    .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
+    .catch(err => console.error(err))
 })
 
 router.get('/qna', (req, res) => {
   db.getQnA()
     .then(data => res.send({data: data}))
-    .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
+    .catch(err => console.error(err))
 })
