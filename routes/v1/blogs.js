@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     .catch(err => console.error(err))
 })
 
-router.get('/:category', (req, res) => {
+router.get('/by/:category', (req, res) => {
   db.getBlogsByCategory(req.params.category)
     .then(data => res.send({data: data}))
     .catch(err => console.error(err))
