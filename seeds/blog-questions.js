@@ -103,8 +103,88 @@ exports.seed = function(knex, Promise) {
           question: "Any other musings?",
           blog_id: 999996,
           blog_answers_id: 999984
-        })
+        }),
 // ^^^ C3 - The Process of Meditation (999996)  ^^^
+        knex('blog-questions').insert({
+          id: 999983,
+          question: "Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?",
+          blog_id: 888889,
+          blog_answers_id: 999983
+        }),
+        knex('blog-questions').insert({
+          id: 999982,
+          question: "What is meant by boxifying design?",
+          blog_id: 888889,
+          blog_answers_id: 999982
+        }),
+        knex('blog-questions').insert({
+          id: 999981,
+          question: "What is the box model?",
+          blog_id: 888889,
+          blog_answers_id: 999981
+        }),
+// ^^^ T2 - My Technical Blog [0.1] (888889)  ^^^
+        knex('blog-questions').insert({
+          id: 999980,
+          question: "What is grid based design?",
+          blog_id: 888888,
+          blog_answers_id: 999980
+        }),
+        knex('blog-questions').insert({
+          id: 999979,
+          question: "Whats all the hype about responsive webpages?",
+          blog_id: 888888,
+          blog_answers_id: 999979
+        }),
+        knex('blog-questions').insert({
+          id: 999978,
+          question: "What is semantic structure?",
+          blog_id: 888888,
+          blog_answers_id: 999978
+        }),
+        knex('blog-questions').insert({
+          id: 999977,
+          question: "Any other points you found interesting and want to reflect on.",
+          blog_id: 888888,
+          blog_answers_id: 999977
+        }),
+        knex('blog-questions').insert({
+          id: 999976,
+          question: "How did the 'process over product' concept affect the way you tackled the site redesign and rebuild?",
+          blog_id: 888887,
+          blog_answers_id: 999976
+        }),
+        knex('blog-questions').insert({
+          id: 999975,
+          question: "What a responsive site is, and why responsiveness is important.",
+          blog_id: 888887,
+          blog_answers_id: 999975
+        }),
+        knex('blog-questions').insert({
+          id: 999974,
+          question: "What mobile first design is, and why it's important.",
+          blog_id: 888887,
+          blog_answers_id: 999974
+        }),
+        knex('blog-questions').insert({
+          id: 999973,
+          question: "What frameworks are, and their pros and cons.",
+          blog_id: 888887,
+          blog_answers_id: 999973
+        }),
+        knex('blog-questions').insert({
+          id: 999972,
+          question: "What a wireframe is and why we use it.",
+          blog_id: 888887,
+          blog_answers_id: 999972
+        }),
+        knex('blog-questions').insert({
+          id: 999971,
+          question: "The aspects of your wireframes you found difficult to implement, and why.",
+          blog_id: 888887,
+          blog_answers_id: 999971
+        })
+// ^^^ T2 - My Technical Blog [0.3] (888887)  ^^^
       ]);
     });
 };

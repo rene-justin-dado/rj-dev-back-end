@@ -13,7 +13,7 @@ exports.seed = function(knex, Promise) {
         }),
         knex('blog-answers').insert({
           id: 999998,
-          answer: "I'm in love with the system already. It actually hits very close to home, I think. As a gamer, having been part of several gaming communities, I've drawn a few comparisons between EDA and the communities I've experienced. While the goal in gaming is mainly to have fun (unless you're <em>that</em> type of person... XD), part of the experience is learning the rules of a game, testing out new things and developing skills that are useful within the game world. EDA, I feel, seems to build a community where fun, experimentation and skill development are simply applied to the real world, rather than a virtual one.",
+          answer: "I'm in love with the system already. It actually hits very close to home, I think. As a gamer, having been part of several gaming communities, I've drawn a few comparisons between EDA and the communities I've experienced. While the goal in gaming is mainly to have fun (unless you're 'that' type of person... XD), part of the experience is learning the rules of a game, testing out new things and developing skills that are useful within the game world. EDA, I feel, seems to build a community where fun, experimentation and skill development are simply applied to the real world, rather than a virtual one.",
           blog_id: 999999,
           blog_questions_id: 999998
         }),
@@ -63,7 +63,7 @@ exports.seed = function(knex, Promise) {
 // ^^^ C1 - Time and Habits (999998)  ^^^
         knex('blog-answers').insert({
           id: 999996,
-          answer: "That we really need to rethink how we define intelligence to be inclusive of factors beyond intellect and that the world seems to be getting less monochrome, so to speak.<br>There's also a lot to be said about the value of taking time away from task and objective oriented thinking to just focusing on awareness. To knowing all the intimate little details that your brain can process that normally get filtered out when we work just to accomplish a goal.",
+          answer: "That we really need to rethink how we define intelligence to be inclusive of factors beyond intellect and that the world seems to be getting less monochrome, so to speak. There's also a lot to be said about the value of taking time away from task and objective oriented thinking to just focusing on awareness. To knowing all the intimate little details that your brain can process that normally get filtered out when we work just to accomplish a goal.",
           blog_id: 999997,
           blog_questions_id: 999996
         }),
@@ -103,8 +103,76 @@ exports.seed = function(knex, Promise) {
           answer: "I'm a bit of a rebel, so I come up with my own meditation training situations for these bits. ;) Like, for this time around, instead of focusing on breathing I put focus on my sight; so I picked up one of my art books (Heart of the Swarm) with the attention of just appreciating the composition of the art in it.",
           blog_id: 999996,
           blog_questions_id: 999984
-        })
+        }),
 // ^^^ C3 - The Process of Meditation (999996)  ^^^
+        knex('blog-answers').insert({
+          id: 999983,
+          answer: "Using a car as an analogy: HTML would be the different parts that make up its structure. The chassis, the windows, the wheels. CSS would determine the look of the vehicle. Its paintjob, its model. Finally, the DOM would be the plans/blueprints to put the car together. Tweaks here and there allow you to make changes to the car's design and its final look.",
+          blog_id: 888889,
+          blog_questions_id: 999983
+        }),
+        knex('blog-answers').insert({
+          id: 999981,
+          answer: "Using a box shape as the base, one can define non-box appearances through the magic of CSS.",
+          blog_id: 888889,
+          blog_questions_id: 999981
+        }),
+// ^^^ T2 - My Technical Blog [0.1] (888889)  ^^^
+        knex('blog-answers').insert({
+          id: 999980,
+          answer: "Grid based design, as the name suggests, is about designing pages by using a grid framework. A grid class would define the maximum width that elements inside it can take up, row would allow its child elements to change size within the grid structure, and col classes would change the elements' width according to the grid and row containers.",
+          blog_id: 888888,
+          blog_questions_id: 999980
+        }),
+        knex('blog-answers').insert({
+          id: 999979,
+          answer: "Because of the range of screen sizes available to users in the modern day, it becomes valuable to be able to present information based on those differences in screen sizes. Thus, it becomes good practice to allow your content to change size and/or hide/show itself according to the amount information a given screen size can display cleanly all at once.",
+          blog_id: 888888,
+          blog_questions_id: 999979
+        }),
+        knex('blog-answers').insert({
+          id: 999978,
+          answer: "Semantic structure is all about how one communicates the meaning of content through the presentation of it. Imagine a webpage without a semantic structure; it would be like talking to a robot. (less 'Jarvis', more HAL 9000) By adding in the semantic structure, you can teach the robot to use inflections and different tones to communicate ideas better based on context.",
+          blog_id: 888888,
+          blog_questions_id: 999978
+        }),
+        knex('blog-answers').insert({
+          id: 999977,
+          answer: "I definitely want to wrap my head around the grid framework better and practice semantic structure. I love story telling, so I feel it's very important to use semantic expressions no matter the medium.",
+          blog_id: 888888,
+          blog_questions_id: 999977
+        }),
+        knex('blog-answers').insert({
+          id: 999976,
+          answer: "While the planning could have been executed more elegantly, it was an important factor in moving forward. I had a couple things on my wishlist that I really wanted that require javascript, so it helped quite a bit to focus more on actually doing all the planning rather than worrying about how the site was turning out. It was very informative to experience development this way; it opened my eyes to the challenges that exist when putting together a site beyond just looking at someone else's design.",
+          blog_id: 888887,
+          blog_questions_id: 999976
+        }),
+        knex('blog-answers').insert({
+          id: 999975,
+          answer: "As the name suggests, a responsive site is one that is able to respond to different conditions that exist across different browsers and systems. For example, a responsive site would resize text or even entire sections of content in response to changes in screen size, browser orientation and other possible factors.",
+          blog_id: 888887,
+          blog_questions_id: 999975
+        }),
+        knex('blog-answers').insert({
+          id: 999974,
+          answer: "The 'mobile first' design philosophy is all about designing websites primarily with mobile devices in mind. The theory is that by designing for mobile first, we don't alienate people who browse the net from their mobiles or tablets and avoid a lot of other issues that come from designing with just desktops in mind. That includes, but is not limited to, dealing with an exclusively touch-screen environment, having vastly limited screen size and loading resources that wouldn't be used on mobile at all.",
+          blog_id: 888887,
+          blog_questions_id: 999974
+        }),
+        knex('blog-answers').insert({
+          id: 999973,
+          answer: "Frameworks are basically CSS blueprints. They are a set of CSS solutions put together, such that, simply having the appropriate semantic structure allows one to easily (HAHAHAH, easy... :P) style one's site based on what the framework is built to do.\ni.e. 'Skeleton' allows for a clean, simple, responsive site; whilst one like 'Bootstrap' offers a lot more functionality and complexity.",
+          blog_id: 888887,
+          blog_questions_id: 999973
+        }),
+        knex('blog-answers').insert({
+          id: 999972,
+          answer: "Kinda everything? It was a big process having to work from scratch and it was a bit of a gut-punch after having put some work into a simple site earlier on. I also had trouble with keeping my header centered. I figured out after a while that I ought to update the blog-template file with semantic structures more relevant to my own wireframes.",
+          blog_id: 888887,
+          blog_questions_id: 999972
+        })
+// ^^^ T2 - My Technical Blog [0.3] (888887)  ^^^
       ]);
     });
 };
