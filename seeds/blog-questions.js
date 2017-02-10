@@ -6,105 +6,105 @@ exports.seed = function(knex, Promise) {
       return Promise.all([
         // Inserts seed entries
         knex('blog-questions').insert({
-          id: 99999,
+          id: 999999,
           question: "What's your take on the DBC/EDA (Dev Bootcamp/Enspiral Dev Academy) experience?",
-          blog_id: 99999,
-          blog_answers_id: 99999
+          blog_id: 999999,
+          blog_answers_id: 999999
         }),
         knex('blog-questions').insert({
-          id: 99998,
+          id: 999998,
           question: "What are your impressions?",
-          blog_id: 99999,
-          blog_answers_id: 99998
+          blog_id: 999999,
+          blog_answers_id: 999998
         }),
         knex('blog-questions').insert({
-          id: 99994,
+          id: 999994,
           question: "How do you see yourself engaging with this type of culture?",
-          blog_id: 99999,
-          blog_answers_id: 99994
+          blog_id: 999999,
+          blog_answers_id: 999994
         }),
         knex('blog-questions').insert({
-          id: 99993,
+          id: 999993,
           question: "Have your expectations of EDA changed? If so, how?",
-          blog_id: 99999,
-          blog_answers_id: 99993
+          blog_id: 999999,
+          blog_answers_id: 999993
         }),
         knex('blog-questions').insert({
-          id: 99992,
+          id: 999992,
           question: "Are you excited to participate in this kind of learning environment? Does it make you nervous?",
-          blog_id: 99999,
-          blog_answers_id: 99992
+          blog_id: 999999,
+          blog_answers_id: 999992
         }),
-// ^^^ C1 - First Reflections (99999)  ^^^
+// ^^^ C1 - First Reflections (999999)  ^^^
         knex('blog-questions').insert({
-          id: 99997,
+          id: 999997,
           question: "Which timebox and habits techniques did you try?",
-          blog_id: 99998,
-          blog_answers_id: 99997
+          blog_id: 999998,
+          blog_answers_id: 999997
         }),
         knex('blog-questions').insert({
-          id: 99991,
+          id: 999991,
           question: "What did you find interesting?",
-          blog_id: 99998,
-          blog_answers_id: 99991
+          blog_id: 999998,
+          blog_answers_id: 999991
         }),
         knex('blog-questions').insert({
-          id: 99990,
+          id: 999990,
           question: "What worked for you?",
-          blog_id: 99998,
-          blog_answers_id: 99990
+          blog_id: 999998,
+          blog_answers_id: 999990
         }),
         knex('blog-questions').insert({
-          id: 99989,
+          id: 999989,
           question: "Which will you experiment further with?",
-          blog_id: 99998,
-          blog_answers_id: 99989
+          blog_id: 999998,
+          blog_answers_id: 999989
         }),
-// ^^^ C1 - Time and Habits (99998)  ^^^
+// ^^^ C1 - Time and Habits (999998)  ^^^
         knex('blog-questions').insert({
-          id: 99996,
+          id: 999996,
           question: "What learnings did you take from the chapter?",
-          blog_id: 99997,
-          blog_answers_id: 99996
+          blog_id: 999997,
+          blog_answers_id: 999996
         }),
         knex('blog-questions').insert({
-          id: 99988,
+          id: 999988,
           question: "How did you find the two minutes of mindfulness?",
-          blog_id: 99997,
-          blog_answers_id: 99988
+          blog_id: 999997,
+          blog_answers_id: 999988
         }),
-// ^^^ C2 - Emotional Intelligence (99997)  ^^^
+// ^^^ C2 - Emotional Intelligence (999997)  ^^^
         knex('blog-questions').insert({
-          id: 99995,
+          id: 999995,
           question: "How did the 'process over product' concept affect the way you tackled the site redesign and rebuild?",
-          blog_id: 99996,
-          blog_answers_id: 99995
+          blog_id: 999996,
+          blog_answers_id: 999995
         }),
         knex('blog-questions').insert({
-          id: 99987,
+          id: 999987,
           question: "What did you think about meditation before reading chapter 2?",
-          blog_id: 99996,
-          blog_answers_id: 99987
+          blog_id: 999996,
+          blog_answers_id: 999987
         }),
         knex('blog-questions').insert({
-          id: 99986,
+          id: 999986,
           question: "What new things have you learnt about mediation?",
-          blog_id: 99996,
-          blog_answers_id: 99986
+          blog_id: 999996,
+          blog_answers_id: 999986
         }),
         knex('blog-questions').insert({
-          id: 99985,
+          id: 999985,
           question: "Did any of the suggested meditation techniques stand out to you?",
-          blog_id: 99996,
-          blog_answers_id: 99985
+          blog_id: 999996,
+          blog_answers_id: 999985
         }),
         knex('blog-questions').insert({
-          id: 99984,
+          id: 999984,
           question: "Any other musings?",
-          blog_id: 99996,
-          blog_answers_id: 99984
+          blog_id: 999996,
+          blog_answers_id: 999984
         })
-// ^^^ C3 - The Process of Meditation (99996)  ^^^
+// ^^^ C3 - The Process of Meditation (999996)  ^^^
       ]);
     });
 };
