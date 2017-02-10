@@ -1,5 +1,5 @@
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('blogs', (table) => {
+  return knex.schema.createTable('cultural-blogs', (table) => {
     table.increments('id').primary()
     table.string('category')
     table.string('title')
@@ -9,5 +9,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists('blogs')
+  return knex.schema.dropTableIfExists('cultural-blogs')
 };
