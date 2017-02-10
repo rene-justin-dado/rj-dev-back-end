@@ -1,3 +1,4 @@
+'use strict'
 const express = require('express')
 const router = express.Router()
 
@@ -14,6 +15,17 @@ router.get('/', (req, res) => {
 router.get('/by/:category', (req, res) => {
   db.getBlogsByCategory(req.params.category)
     .then(data => res.send({data: data}))
+    .catch(err => console.error(err))
+})
+
+router.post('/add/by/:category/post', (req, res) => {
+  const category = req.params.category
+  const title = req.params.title || ''
+  const subTitle = req.params.sub_title || ''
+  const content = req.params.content || ''
+
+  db.addBlogByCategory(category, title, subTitle)
+    .then(data => res.json({data: data}))
     .catch(err => console.error(err))
 })
 
