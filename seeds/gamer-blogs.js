@@ -4,15 +4,6 @@ exports.seed = function(knex, Promise) {
   return knex('gamer-blogs').del()
     .then(function () {
       return Promise.all([
-        // Inserts seed entries
-          // table.string('category')
-          // table.string('title')
-          // table.string('sub_title')
-          // table.string('content')
-          // table.string('share_image')
-          // table.string('share_video')
-          // table.string('share_link')
-
         knex('gamer-blogs').insert({
           id: 777779,
           category: 'Gamer Nerd',
@@ -21,7 +12,7 @@ exports.seed = function(knex, Promise) {
           content: 'I like mechanically good games and games with good narratives.',
           share_image: '',
           share_video: '',
-          share_link: ''
+          share_link: 'https://en.wikipedia.org/wiki/Video_game_culture'
         }),
         knex('gamer-blogs').insert({
           id: 777778,
@@ -40,7 +31,7 @@ exports.seed = function(knex, Promise) {
           sub_title: 'his channel\'s cool',
           content: 'Hi frands',
           share_image: '',
-          share_video: 'https://youtu.be/9RDoZU0w_2U',
+          share_video: 'https://www.youtube.com/watch?v=9RDoZU0w_2U',
           share_link: ''
         })
       ])
