@@ -5,7 +5,7 @@ const db = require('../../lib/database')
 
 module.exports = router
 
-router.get('/', (req, res) => {
+router.get('/ ', (req, res) => {
   db.getAllProjects()
     .then(data => res.send({data: data}))
     .catch(() => res.status(500).send("Sorry, something went horribly, terribly wrong..."))
